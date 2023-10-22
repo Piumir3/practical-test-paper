@@ -1,0 +1,27 @@
+﻿@model WebApplicationNefc.Models.AddVehicle
+@{
+}
+
+<h1>Add Vehicle</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="RegNo" class="form-label">Registration Number</label>
+        <input type="text" class="form-control" asp-for="RegNo">
+        <span asp-validation-for="RegNo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="ModelName" class="form-label">Model Name</label>
+        <input type="text" class="form-control" asp-for="ModelName">
+        <span asp-validation-for="ModelName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="NumberOfSeats" class="form-label">Number of Seats</label>
+        <input type="text" class="form-control" asp-for="NumberOfSeats">
+        <span asp-validation-for="NumberOfSeats" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Colors" class="form-label">Colors (comma-separated)</label>
+        <input type="text" class="form-control" asp-for="Colors">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
