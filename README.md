@@ -1,4 +1,4 @@
-Entity-Relationship Diagram
+#Entity-Relationship Diagram
 The system is designed based on the following entity-relationship diagram:
 
 Vehicle
